@@ -1,7 +1,7 @@
 
 export default function Sll({ im, ti,pr,dell}) {
     return (
-        <div className="bg-amber-400 h-28 w-95 md:w-160 lg:w-230 mt-6 p-2 flex items-center justify-between rounded-sm">
+        <div className="bg-amber-400 h-28 w-90 md:w-160 lg:w-230 mt-6 p-2 flex items-center justify-between rounded-sm">
             <img className="h-23 w-23 rounded-2xl" src={im} alt="" />
             <p>{ti}</p>
             <span className=" relative top-8 left-8 text-green-700 font-bold ">${ pr}</span>

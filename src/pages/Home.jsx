@@ -30,16 +30,19 @@ export default function Home({ cll }) {
 const [bmw,setBmw] = useState(false)
   return (
     <>
-      <div className=" bg-gray-800 w-full overflow-x-hidden  p-10  min-h-screen flex justify-center items-center flex-col">
+      <div className=" bg-gray-800 w-full overflow-x-hidden  p-12  min-h-screen flex justify-center items-center flex-col">
         {bmw&& <Loo/>}
-  <Ser add={setSearch} vall={search} />  
-        <div className="   p-6 grid gap-4 grid-cols-[repeat(2,180px)] md:grid-cols-[repeat(3,250px)] lg:grid-cols-[repeat(4,260px)] lg:gap-6">
+  <Ser add={setSearch} vall={search} /> 
+  
+
+        <div className=" justify-center justify-items-center  p-6 grid gap-4 grid-cols-[repeat(2,180px)] md:grid-cols-[repeat(3,250px)] lg:grid-cols-[repeat(4,260px)] lg:gap-6">
           
       {sellCard && <Pro onClose={()=>{setsellCard(null) }}/>}
         {filluser.map((e) => {
           return <Card key={e.id} title={e.title } img={e. thumbnail} price={e.price} cll={cll} pro={e} onBuy={addCard} alirt={setBmw} />
         })}
         </div>
+
         
       </div>
     </>
