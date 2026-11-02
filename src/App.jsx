@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom"
+import { HashRouter as Router,Routes,Route } from "react-router-dom"
 import { useState } from "react"
 // These Pages
 import Login from "./pages/Login"
@@ -20,6 +20,8 @@ function App() {
     }
     return (
         <>
+        <Router>
+
             <div className=" flex flex-col min-h-screen">
                 <Nav />
 
@@ -30,6 +32,8 @@ function App() {
                     <Route path="/About" element={<About />} />
                 </Routes>
             </div>
+        
+        </Router>
 
         </>
     )
