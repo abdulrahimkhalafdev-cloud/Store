@@ -24,7 +24,7 @@ function App() {
                 <Nav />
 
                 <Routes>
-                    <Route path="/Login" element={<Login />} />
+                    <Route path="/" element={<Login />} />
                     <Route path="/Home" element={<Home cll={addCard} />} />
                     <Route path="/Sala" element={<Sala cart={card} setC={setCard} />} />
                     <Route path="/About" element={<About />} />

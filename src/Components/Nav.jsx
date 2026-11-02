@@ -7,7 +7,7 @@ export default function Nav() {
     return (
         <nav className="bg-blue-500 p-3 w-full fixed">
             <ul className=" flex justify-around list-none text-white text-lg capitalize ">
-                <Link to={"/Login"}> <li>Login</li> </Link>
+                <Link to={"/"}> <li>Login</li> </Link>
                 <Link to={"/Home"}> <li className="">Home</li> </Link>
                 <Link to={"/Sala"}> <li> <FiShoppingCart size={26}/> </li> </Link>
                 <Link to={"/About"}><li className="">About</li></Link>
