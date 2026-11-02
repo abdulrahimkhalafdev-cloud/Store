@@ -30,7 +30,7 @@ export default function Home({ cll }) {
 const [bmw,setBmw] = useState(false)
   return (
     <>
-      <div className=" bg-gray-800  p-10  min-h-screen flex justify-center items-center flex-col">
+      <div className=" bg-gray-800 w-full overflow-x-hidden  p-10  min-h-screen flex justify-center items-center flex-col">
         {bmw&& <Loo/>}
   <Ser add={setSearch} vall={search} />  
         <div className="   p-6 grid gap-4 grid-cols-[repeat(2,180px)] md:grid-cols-[repeat(3,250px)] lg:grid-cols-[repeat(4,260px)] lg:gap-6">
