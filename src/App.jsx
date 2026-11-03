@@ -23,7 +23,7 @@ function App() {
         
 
             <div className=" flex flex-col min-h-screen">
-                <Nav />
+                
 
                 <Routes>
                     <Route path="/" element={<Login />} />
@@ -31,6 +31,7 @@ function App() {
                     <Route path="/Sala" element={<Sala cart={card} setC={setCard} />} />
                     <Route path="/About" element={<About />} />
                 </Routes>
+                <Nav />
             </div>
         
         

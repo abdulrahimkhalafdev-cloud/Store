@@ -15,7 +15,7 @@ export default function Card({ title, price, img, cll, pro, onBuy,alirt }) {
         
     }
     return (
-        <div className="bg-amber-500 p-5 w-38 h-85  flex  items-center flex-col justify-between    gap-2 rounded-md select-none mt-16 md:w-61 md:h-95 lg:mt-16">
+        <div className="bg-amber-500 p-2 w-full max-w-[230px] h-85  flex  items-center flex-col justify-between    gap-1 rounded-md select-none mt-16 md:w-61 md:h-95 lg:mt-16">
             <p className='text-white  capitalize  '>{title}</p>
             <img className='  rounded-sm' src={img} alt="" />
             <div className="flex w-full justify-between ">

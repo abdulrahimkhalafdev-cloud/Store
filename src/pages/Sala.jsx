@@ -9,7 +9,7 @@ function Sala({cart,setC}) {
   }
 
   return (
-    <div className="bg-red-500 p-10 min-h-screen flex flex-col  items-center ">
+    <div className="bg-red-500 w-full p-10 min-h-screen flex flex-col  items-center ">
       
       {cart.map((e,index) => {
         return <Sll im={e.thumbnail} ti={e.title} pr={e.price} dell={() => deleteCard(index)} />
